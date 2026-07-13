@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coffee shop</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+     <header>
+          <h1>☕Coffee Order Builder</h1>
+     </header>
+
+     <main class="app">
+          <!-- panel Section -->
+          <section class="panel" aria-label="Order options">
+               <!-- Drink -->
+                <div class="option-group">
+                   <h2>Drink</h2> 
+                   <div class="radio-group">
+                    <label><input type="radio" name="drink" value="espresso" checked/>Espresso</label>
+                    <label><input type="radio" name="drink" value="Latte"/>Latte</label>
+                    <label><input type="radio" name="drink" value="cappuccino"/>Cappuccino</label>
+                    <label><input type="radio" name="drink" value="matcha"/>Matcha</label>
+                    <label><input type="radio" name="drink" value="chai"/>Chai</label>
+                   </div>
+                </div>
+
+               <!-- Size -->
+                <div class="option-group">
+                    <h2>Size</h2>
+                    <div class="radio-group">
+                      <label><input type="radio" name="size" value="small"/>Small</label>
+                      <label><input type="radio" name="size" value="medium" checked/>Medium</label>
+                      <label><input type="radio" name="size" value="large"/>Large</label>
+                    </div>
+                </div>
+
+               <!-- Milk   -->
+                <div class="option-group">
+                    <h2>Milk</h2>
+                    <div class="radio-group">
+                         <label><input type="radio" name="milk" value="regular" checked/>Regular</label>
+                         <label><input type="radio" name="milk" value="oat" />Oat</label>
+                         <label><input type="radio" name="milk" value="almond" />Almond</label>
+                         <label><input type="radio" name="milk" value="soy" />Soy</label>
+                         <label><input type="radio" name="milk" value="none" />None</label>
+
+                    </div>
+                </div>
+
+               <!-- Extras  -->
+                <div class="option-group">
+                    <h2>Extras</h2>
+                    <div class="checkbox-group">
+                         <label><input type="checkbox" name="extras" values="extrashot"/>Extra Shot</label>
+                         <label><input type="checkbox" name="extras" values="vanilla"/>Vanilla Syrup</label>
+                         <label><input type="checkbox" name="extras" values="whipped"/>Whipped Cream</label>
+                         <label><input type="checkbox" name="extras" values="caramel"/>Caramel Syrup</label>
+                    </div>
+                </div>
+
+          </section>
+
+          <!-- visual Section -->
+          <section class="visual" aria-label="Visual cup and oerder summary">
+               <div class="cup-scene">
+                    <div class="cup" id="cup">
+                         <div class="cup-fill"></div>
+                         <div class="cup-shine"></div>
+                    </div>
+                    <div class="cup-base"></div>
+                    <div class="cup-handle"></div>
+
+                    <div class="badges" id="badges">
+                      <span class="badge" id="badge-extrashot" aria-label="extra-shot"><i class="fa-solid fa-bolt"></i></span>
+                      <span class="badge" id="badge-extrashot" aria-label="vanilla-syrup"><i class="fa-solid fa-mug-hot"></i></span>
+                      <span class="badge" id="badge-extrashot" aria-label="whipped-cream"><i class="fa-solid fa-cloud"></i></span>
+                      <span class="badge" id="badge-extrashot" aria-label="caramel-syrup"><i class="fa-solid fa-splotch"></i></span>
+                    </div>
+               </div>
+
+               <!-- Summary -->
+                <div class="summary" id="summary" aria-label="summary of coffee build"></div>
+          </section>
+     </main>
+
+     <!-- Script -->
+       <script src="script.js"></script>
+    </body>
+</html>
+
+
+                
+
+
+
