@@ -97,10 +97,10 @@ input[type="checkbox"] {
 
 .cup-shine {
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 25px;
     width: 40px;
-    height: 90px;
+    height: 80px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
 }
@@ -139,10 +139,102 @@ input[type="checkbox"] {
     font-weight: 600;
     color: #f5f0e6;
     background: rgba(40, 37, 33, 0.9);
-    padding: 1.5rem;
+    padding: 1.9rem;
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-    border: 1px sollid rgba(215, 168, 110, 0.2);
+    border: 1px solid rgba(215, 168, 110, 0.2);
     width: 90%;
     margin: 0 auto;
+}
+/* .summary h2{
+    color: #d7a86e;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+} */
+
+@media (max-width: 900px) {
+    .app {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        width: 95%;
+    }
+
+    .panel,
+    .visual {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    header {
+        font-size: 1.6rem;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .summary {
+        width: 90%;
+        margin: 1rem auto;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        font-size: 1.4rem;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .app {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        width: 100%;
+        padding: 1rem;
+    }
+    .cup-scene {
+        margin-top: 3rem;
+    }
+
+    .cup {
+        width: 120px;
+        height: 160px;
+        border-width: 4px;
+    }
+
+    .cup-base {
+        width: 150px;
+        height: 25px;
+    }
+
+    .summary {
+        width: 90%;
+        margin: 1rem auto;
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+
+    .option-group h2 {
+        font-size: 1rem;
+    }
+    .radio-group,
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radio-group label {
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+    }
+    .checkbox-group label {
+        font-size: 0.9rem;
+    }
+    .badge {
+        margin: 0 7px;
+        font-size: 16px;
+    }
 }
