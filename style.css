@@ -18,7 +18,7 @@ header {
     color: #d7a86e;
     font-size: 2rem;
     font-weight: 500;
-    text-shadow: 5px 5px 10px rgba(215, 168, 110, 0.4);
+    text-shadow: 0px 4px 9px rgba(215, 168, 110, 0.4);
 }
 .app {
     display: flex;
@@ -62,26 +62,25 @@ input[type="checkbox"] {
 .visual {
     flex: 1;
     text-align: center;
+    margin-bottom: 7rem;
 }
 .cup-scene {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 7rem;
+    margin-bottom: 0.4rem;
 }
 .cup {
     position: relative;
-    width: 160px;
-    height: 200px;
+    width: 180px;
+    height: 210px;
+    background: linear-gradient(to bottom, #3b2314 55%, #0f0f0f 45);
+    backdrop-filter: blur(4px);
+    border: 2px solid #dbb78b;
+    border-radius: 10px 10px 40px 40px;
     overflow: hidden;
-    border: 6px solid #d7a86e;
-    background: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 40%);
-    border-radius: 0 0 90px 90px;
-    box-shadow:
-        inset 0 -10px 15px rgba(0, 0, 0, 0.4),
-        0 10px 20px rgba(59, 56, 56, 0.5);
+    box-shadow: inset 0 0 10px rgba(250, 250, 250, 0.3);
 }
 .cup-fill {
     position: absolute;
@@ -94,24 +93,35 @@ input[type="checkbox"] {
         height 0.6s ease,
         background 0.4s ease;
 }
-
+.cup-fill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 50% 50% 0 0/ 7px 7px 0 0;
+}
 .cup-shine {
     position: absolute;
-    top: 20px;
-    left: 25px;
-    width: 40px;
-    height: 80px;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
+    top: 21px;
+    left: 16px;
+    width: 16px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    transform: rotate(-8deg);
+    pointer-events: none;
 }
-
 .cup-base {
-    margin-top: 9px;
-    background: radial-gradient(circle at center, #d7a86e 0%, #a67c52 100%);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-    border-radius: 50px;
-    width: 200px;
-    height: 30px;
+    width: 210px;
+    height: 15px;
+    background: radial-gradient(circle at center, #5a4a45 0%, #675241 100%);
+    border-radius: 0 0 50px 50px;
+    border: 2px solid #d7a86e;
+    border-top: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4) mar;
 }
 .badges {
     margin-top: 12px;
@@ -181,8 +191,7 @@ input[type="checkbox"] {
 }
 @media (max-width: 600px) {
     header {
-        font-size: 1.4rem;
-        padding: 1rem 0;
+        font-size: 1.2rem;
         text-align: center;
     }
 
@@ -190,30 +199,25 @@ input[type="checkbox"] {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 0.8rem;
+        gap: 0.4rem;
         width: 100%;
         padding: 1rem;
     }
-    .cup-scene {
-        margin-top: 3rem;
-    }
-
     .cup {
         width: 120px;
         height: 160px;
-        border-width: 4px;
+        border-width: 2.3px;
     }
 
     .cup-base {
         width: 150px;
-        height: 25px;
+        height: 20px;
     }
-
     .summary {
         width: 90%;
         margin: 1rem auto;
         font-size: 0.95rem;
-        padding: 0.5rem;
+        padding: 1rem;
     }
 
     .option-group h2 {
