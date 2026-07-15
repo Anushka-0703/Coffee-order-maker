@@ -39,13 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
         // Summary display
         summary.innerHTML = `
         <h3>Summary</h3>
-        <h5>You ordered a ${size} ${drink} with ${milk} milk ${extras.length ? " + " + extras.join(", ") : ""}.</h5>
+        <h4>You ordered a ${size} ${drink} with ${milk} milk ${extras.length ? " + " + extras.join(", ") : ""}.</h4>
         `;
     }
     // Default summary on load
     summary.innerHTML = `
      <h3>Summary</h3>
-     <h5>Default selection: Medium Espresso with Regular milk.</h5>
+     <h4>Default selection: Medium Espresso with Regular milk.</h4>
      `;
 
     //setting style for summary => h3 and h5
