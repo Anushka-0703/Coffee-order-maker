@@ -50,10 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //setting style for summary => h3 and h5
     const h3 = summary.querySelector("h3");
-    const h5 = summary.querySelector("h5");
+    const h4 = summary.querySelector("h4");
 
     h3.style.color = "#D7A86E";
-    h5.style.color="#F6EDD1"
+    h4.style.color = "#F6EDD1";
 
     // find inputs
     document.querySelectorAll("input").forEach((input) => {
