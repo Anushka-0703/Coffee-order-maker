@@ -45,15 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Default summary on load
     summary.innerHTML = `
      <h3>Summary</h3>
-     <h4>Default selection: Medium Espresso with Regular milk.</h4>
+     <h4>You ordered a Medium Espresso with Regular milk.</h4>
      `;
-
-    //setting style for summary => h3 and h5
-    const h3 = summary.querySelector("h3");
-    const h4 = summary.querySelector("h4");
-
-    h3.style.color = "#D7A86E";
-    h4.style.color = "#F6EDD1";
 
     // find inputs
     document.querySelectorAll("input").forEach((input) => {
